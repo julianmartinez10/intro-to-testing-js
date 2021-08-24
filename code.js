@@ -10,10 +10,19 @@ const helloWorld = function(){
 
  // sayHello function
 function sayHello(input){
-    if(input === true){
-        return "Hello, World!";
-    }
-    if(typeof input === 'undefined'){
+    // if(input === true){
+    //     return "Hello, World!";
+    // }
+    // if(input === false){
+    //     return "Hello, World!";
+    // }
+    // if(typeof input === 'undefined'){
+    //     return "Hello, World!";
+    // }else{
+    //     return "Hello, " + input + "!";
+    // }
+    //  REFACTORED
+    if(typeof input === "boolean" || typeof input === "undefined"){
         return "Hello, World!";
     }else{
         return "Hello, " + input + "!";
