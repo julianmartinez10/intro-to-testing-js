@@ -38,3 +38,7 @@ function sayHello(input){
     // }
     //  EDGE CASES
 }
+
+function isFive(){
+    return "I'm a function";
+}

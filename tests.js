@@ -54,3 +54,10 @@ describe('sayHello', function (){
     })
 });
 
+//  Unit test for isFive()
+describe('isFive', function(){
+    it('should be a defined function', function(){
+        expect(typeof isFive).toBe('function')
+    })
+})
+
