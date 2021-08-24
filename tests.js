@@ -60,11 +60,16 @@ describe('isFive', function(){
         expect(typeof isFive).toBe('function');
     });
     it('should be a boolean', function(){
-        expect(isFive(true)).toBe(true);
+        expect(isFive(5)).toBe(true);
     });
     it('should return false', function(){
         expect(isFive(typeof 'string')).toBe(false);
     });
-
+    it('isFive("5") should return true', function(){
+        expect(isFive("5")).not.toBe(false);
+    });
+    it('isFive(3) should return false', function(){
+        expect(isFive()).toBe(false);
+    })
 })
 
