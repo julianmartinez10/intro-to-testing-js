@@ -41,8 +41,8 @@ function sayHello(input){
 
 function isFive(input){
     if(input == null){
-        return "I'm null!"
+        return false
     }else {
-        return "I'm not null!";
+        return true;
     }
 }

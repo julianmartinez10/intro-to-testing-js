@@ -60,7 +60,7 @@ describe('isFive', function(){
         expect(typeof isFive).toBe('function');
     });
     it('should be a boolean', function(){
-        expect(isFive(true)).toBe('I\'m not null!');
+        expect(isFive(true)).toBe(true);
     });
 })
 
