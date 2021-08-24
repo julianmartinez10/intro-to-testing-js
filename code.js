@@ -8,7 +8,7 @@ const helloWorld = function(){
     return "Hello, World!";
 }
 
-//  sayHello function
+ // sayHello function
 function sayHello(){
-    return "Hello!";
+    return "";
 }
