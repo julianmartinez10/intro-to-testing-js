@@ -40,8 +40,8 @@ function sayHello(input){
 }
 
 function isFive(input){
-    if(input == null){
-        return false
+    if(typeof input === 'string'){
+        return false;
     }else {
         return true;
     }
