@@ -21,7 +21,9 @@ function sayHello(input){
     }else if(input === null){
         return "Hello, World!";
     }else if(input === ''){
-        return "I'm an empty string!"
+        return "I'm an empty string!";
+    }else if(typeof input === 'number'){
+        return "I'm a number!";
     }else{
         return 'Hello, ' + input + '!';
     }
