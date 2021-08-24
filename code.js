@@ -40,13 +40,19 @@ function sayHello(input){
 }
 
 function isFive(input){
-    if(input == '5'){
+    // if(input == '5'){
+    //     return true;
+    // }else if(typeof input === 'string'){
+    //     return false;
+    // }else if(input !== 5){
+    //     return false
+    // }else {
+    //     return true;
+    // }
+    //  REFACTORED
+    if(input === 5 || input === '5'){
         return true;
-    }else if(typeof input === 'string'){
+    }else{
         return false;
-    }else if(input !== 5){
-        return false
-    }else {
-        return true;
     }
 }

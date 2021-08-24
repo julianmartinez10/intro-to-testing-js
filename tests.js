@@ -62,7 +62,7 @@ describe('isFive', function(){
     it('should be a boolean', function(){
         expect(isFive(5)).toBe(true);
     });
-    it('should return false', function(){
+    it('isFive(\'string\') should return false', function(){
         expect(isFive(typeof 'string')).toBe(false);
     });
     it('isFive("5") should return true', function(){
