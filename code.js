@@ -24,10 +24,13 @@ function sayHello(input){
         return "I'm an empty string!";
     }else if(typeof input === 'number'){
         return "I'm a number!";
+    }else if(input === 'Jane' || input === 'Alex' || input === 'Pat'){
+        return `Hello, ${input}!`;
     }else{
-        return 'Hello, ' + input + '!';
+        return 'I\'m a string!';
     }
-    //  REFACTORED
+
+   //  REFACTORED
     // if(typeof input === "boolean" || typeof input === "undefined" || input === null){
     //     return helloWorld;
     // }else{
