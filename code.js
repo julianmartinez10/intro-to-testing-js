@@ -10,6 +10,9 @@ const helloWorld = function(){
 
  // sayHello function
 function sayHello(input){
+    if(input === true){
+        return "Hello, World!";
+    }
     if(typeof input === 'undefined'){
         return "Hello, World!";
     }else{
