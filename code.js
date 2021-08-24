@@ -39,6 +39,10 @@ function sayHello(input){
     //  EDGE CASES
 }
 
-function isFive(){
-    return "I'm a function";
+function isFive(input){
+    if(input == null){
+        return "I'm null!"
+    }else {
+        return "I'm not null!";
+    }
 }

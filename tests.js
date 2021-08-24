@@ -54,10 +54,13 @@ describe('sayHello', function (){
     })
 });
 
-//  Unit test for isFive()
+//  Unit test for isFive(input)
 describe('isFive', function(){
     it('should be a defined function', function(){
-        expect(typeof isFive).toBe('function')
-    })
+        expect(typeof isFive).toBe('function');
+    });
+    it('should be a boolean', function(){
+        expect(isFive(true)).toBe('I\'m not null!');
+    });
 })
 
