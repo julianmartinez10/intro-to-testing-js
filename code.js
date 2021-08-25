@@ -50,9 +50,13 @@ function isFive(input){
     //     return true;
     // }
     //  REFACTORED
-    if(input === 5 || input === '5'){
+    if(input == 5){
         return true;
     }else{
         return false;
     }
+}
+
+function isEven(input){
+    return true;
 }

@@ -73,3 +73,21 @@ describe('isFive', function(){
     })
 })
 
+//  Unit test for isEven(input)
+describe('isEven', function(){
+    it('should be a defined function', function(){
+        expect(typeof isEven).toBe('function');
+    });
+    it('should be a boolean', function(){
+        expect(isEven('boolean')).toBe(true);
+    });
+    it('returns true when executed with isEven(2)', function(){
+        expect(isEven(2)).toBe(true);
+    });
+    it('returns true when executed with isEven(-4)', function(){
+        expect(isEven(-4)).toBe(true);
+    });
+    it('returns false when executed with isEven(3)', function(){
+        expect(isEven(3)).toBe(false);
+    });
+})
