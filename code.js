@@ -58,5 +58,11 @@ function isFive(input){
 }
 
 function isEven(input){
-    return true;
+    if(typeof input == NaN){
+        return false;
+    }else if(input % 2 !== 0){
+        return false;
+    }else{
+        return true;
+    }
 }

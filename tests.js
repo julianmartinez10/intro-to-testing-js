@@ -60,7 +60,7 @@ describe('isFive', function(){
         expect(typeof isFive).toBe('function');
     });
     it('should be a boolean', function(){
-        expect(isFive(5)).toBe(true);
+        expect(isFive()).toBe(false);
     });
     it('isFive(\'string\') should return false', function(){
         expect(isFive(typeof 'string')).toBe(false);
@@ -79,7 +79,7 @@ describe('isEven', function(){
         expect(typeof isEven).toBe('function');
     });
     it('should be a boolean', function(){
-        expect(isEven('boolean')).toBe(true);
+        expect(isEven()).toBe(false);
     });
     it('returns true when executed with isEven(2)', function(){
         expect(isEven(2)).toBe(true);
@@ -89,5 +89,8 @@ describe('isEven', function(){
     });
     it('returns false when executed with isEven(3)', function(){
         expect(isEven(3)).toBe(false);
+    });
+    it('returns false when called with isEven("banana")', function(){
+        expect(isEven("banana")).toBe(false);
     });
 })
