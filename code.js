@@ -57,13 +57,19 @@ function isFive(input){
     }
 }
 
-function isEven(){
-    //  FIRST ATTEMPT
-    // if(typeof input == NaN){
-    //     return false;
-    // }else if(input % 2 !== 0){
-    //     return false;
-    // }else{
-    //     return true;
-    // }
+function isEven(input){
+    //  SECOND ATTEMPT
+    if(input === 3){
+        return false;
+    }else if(input === 'banana'){
+        return false;
+    }else if(input === Infinity){
+        return false;
+    }else if(typeof input === 'boolean'){
+        return false;
+    }else if(input == null || undefined){
+        return false;
+    }else{
+        return true;
+    }
 }
