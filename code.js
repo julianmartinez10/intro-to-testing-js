@@ -58,18 +58,10 @@ function isFive(input){
 }
 
 function isEven(input){
-    //  SECOND ATTEMPT
-    if(input === 3){
-        return false;
-    }else if(input === 'banana'){
-        return false;
-    }else if(input === Infinity){
-        return false;
-    }else if(typeof input === 'boolean'){
-        return false;
-    }else if(input == null || undefined){
-        return false;
-    }else{
+    //  REFACTOR
+    if(input % 2 == 0 && typeof input !== 'boolean'){
         return true;
+    }else{
+        return false;
     }
 }
