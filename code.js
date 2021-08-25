@@ -57,12 +57,13 @@ function isFive(input){
     }
 }
 
-function isEven(input){
-    if(typeof input == NaN){
-        return false;
-    }else if(input % 2 !== 0){
-        return false;
-    }else{
-        return true;
-    }
+function isEven(){
+    //  FIRST ATTEMPT
+    // if(typeof input == NaN){
+    //     return false;
+    // }else if(input % 2 !== 0){
+    //     return false;
+    // }else{
+    //     return true;
+    // }
 }
