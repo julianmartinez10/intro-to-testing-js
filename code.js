@@ -70,8 +70,39 @@ function isEven(input){
 function isVowel(input){
     if(input === 'a' || input === 'A'){
         return true;
+    }else if(input === 'e' || input === 'E'){
+        return true;
+    }else if(input === 'i' || input === 'I'){
+        return true;
+    }else if(input === 'o' || input === 'O'){
+        return true;
+    }else if(input === 'u' || input === 'U'){
+        return true;
     }else if(input === true || input === false){
         return false;
     }
     return typeof input === 'boolean';
 }
+
+//  isVowel Refactor Function
+// function isVowel(input){
+//     switch(input.toLowerCase()){
+//         case 'a':
+//             return true;
+//             break;
+//         case 'e':
+//             return true;
+//             break;
+//         case 'i':
+//             return true;
+//             break;
+//         case 'o':
+//             return true;
+//             break;
+//         case 'u':
+//             return true;
+//             break;
+//     }
+//
+//     return typeof input === 'boolean';
+// }
