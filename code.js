@@ -83,26 +83,3 @@ function isVowel(input){
     }
     return typeof input === 'boolean';
 }
-
-//  isVowel Refactor Function
-// function isVowel(input){
-//     switch(input.toLowerCase()){
-//         case 'a':
-//             return true;
-//             break;
-//         case 'e':
-//             return true;
-//             break;
-//         case 'i':
-//             return true;
-//             break;
-//         case 'o':
-//             return true;
-//             break;
-//         case 'u':
-//             return true;
-//             break;
-//     }
-//
-//     return typeof input === 'boolean';
-// }
