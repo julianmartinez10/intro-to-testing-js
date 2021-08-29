@@ -131,5 +131,11 @@ describe('isVowel', function() {
     it('isVowel(true) or isVowel(false) both return false', function(){
         expect(isVowel(true)).toBe(false);
         expect(isVowel(false)).toBe(false);
-    })
+    });
+    it('isVowel("banana") returns false', function(){
+        expect(isVowel('banana')).toBe(false);
+    });
+    it('isVowel() returns false', function(){
+        expect(isVowel()).toBe(false);
+    });
 })
