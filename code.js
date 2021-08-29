@@ -68,8 +68,10 @@ function isEven(input){
 
 //  isVowel Function
 function isVowel(input){
-    if(input === 'a'){
+    if(input === 'a' || input === 'A'){
         return true;
+    }else if(input === true || input === false){
+        return false;
     }
     return typeof input === 'boolean';
 }

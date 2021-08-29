@@ -118,5 +118,18 @@ describe('isVowel', function() {
     });
     it('isVowel("a") returns true', function(){
         expect(isVowel('a')).toBe(true);
+    });
+    it('isVowel("A") returns true', function(){
+        expect(isVowel('A')).toBe(true);
+    });
+    it('isVowel("y") returns false', function(){
+        expect(isVowel('y')).toBe((false));
+    });
+    it('isVowel(4) returns false', function(){
+        expect(isVowel(4)).toBe(false);
+    });
+    it('isVowel(true) or isVowel(false) both return false', function(){
+        expect(isVowel(true)).toBe(false);
+        expect(isVowel(false)).toBe(false);
     })
 })
